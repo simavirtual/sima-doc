@@ -1,0 +1,44 @@
+[[config]]
+
+////
+a=&#225; e=&#233; i=&#237; o=&#243; u=&#250;
+
+A=&#193; E=&#201; I=&#205; O=&#211; U=&#218;
+
+n=&#241; N=&#209;
+////
+
+== CONFIGURACI&#211;N PARA GENERAR LOS ARCHIVO PLANOS
+
+=== ACTIVIDADES PARA CONFIGURAR LOS ARCHIVOS PLANOS DE LA CONTABILIDAD
+
+==== OBJETIVO
+
+Documentar las actividades que se debe realizar en el SIMA para habilitar la generaci&#243;n del archivo plano de la contabilidad.
+
+==== ALCANCE
+
+Este documento aplica a para el sistema de SIMACART.
+
+==== RESPONSABLES
+
+Administrador del sistema.
+
+==== ASPECTOS GENERALES
+
+* Se debe ingresar al SIMACART con el nombre del usuario y su correspondiente clave.
+
+==== ACTIVIDADES
+
+Los campos que se deben configurar son los siguientes:
+
+* Opci&#243;n: *[UTILIDADES][CONFIGURACION][CONFIGURACION GENERAL]* buscar los siguientes campos:
+
+** *CODIGO DE LA EMPRESA MVT:*
+
+*** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo
+
+** *EMPRESA MVT CONTABLE:* C&#243;digo de la empresa para la cual se genera los archivos planos.
+
+*** 1 : SIIGO - Genera el archivo de acuerdo a las especificacines suministradas.
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- gi@lasallebga.edu.co -->
+<project name="gi" default="bak" basedir=".">
+
+  <tstamp/>
+  <property name="bak"          value="../../backups/gi"/>
+  <property name="project.name" value="simadoc"/>
+
+  <target name="bak">
+    <delete dir="target" failonerror="no"/>
+    <mkdir dir="${bak}/${project.name}" />
+    <jar jarfile="${bak}/${project.name}/${DSTAMP}-${TSTAMP}-${project.name}.zip" basedir="."/>
+  </target>
+
+  <target name="ok">
+    <mkdir dir="${bak}/${project.name}" />
+    <delete dir="target" failonerror="no"/>
+    <jar jarfile="${bak}/${project.name}/ok-${DSTAMP}-${TSTAMP}-${project.name}.zip" basedir="."/>
+  </target>
+
+  <target name="del" description="Initialize the build">
+    <delete dir="simacart\contabilidad\admin\target" failonerror="no"/>
+  </target>
+
+
+
+</project>
