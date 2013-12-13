@@ -28,17 +28,23 @@ Administrador del sistema.
 
 * Se debe ingresar al SIMACART con el nombre del usuario y su correspondiente clave.
 
+* Se debe consultar previamente todos los extractos en el sistema para que se actualice su estructura.
+
+* Si existen varios abonos para el mismo mes se debe de mismo estudiantes se debe reunir en uno solo.
+
 ==== ACTIVIDADES
 
 Los campos que se deben configurar son los siguientes:
 
 * Opci&#243;n: *[UTILIDADES][CONFIGURACION][CONFIGURACION GENERAL]* buscar los siguientes campos:
 
+** *EMPRESA MVT CONTABLE:* C&#243;digo de la empresa para la cual se genera los archivos planos.
+
+*** 1 : SIIGO - Genera el archivo de acuerdo a las especificacines suministradas.
+
 ** *CODIGO DE LA EMPRESA MVT:*
 
 *** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo
 
-** *EMPRESA MVT CONTABLE:* C&#243;digo de la empresa para la cual se genera los archivos planos.
 
-*** 1 : SIIGO - Genera el archivo de acuerdo a las especificacines suministradas.
 
