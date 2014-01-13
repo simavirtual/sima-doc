@@ -38,6 +38,10 @@ Los campos que se deben configurar son los siguientes:
 
 * Opci&#243;n: *[UTILIDADES][CONFIGURACION][CONFIGURACION GENERAL]* buscar los siguientes campos:
 
+** *NIT DE LA EMPRESA:*
+
+*** Se debe asignar el Nit con el d&#243;gito de verificaci&#243;n.
+
 ** *EMPRESA MVT CONTABLE:* C&#243;digo de la empresa para la cual se genera los archivos planos.
 
 *** 1 : SIIGO - Genera el archivo de acuerdo a las especificacines suministradas.
@@ -45,6 +49,8 @@ Los campos que se deben configurar son los siguientes:
 ** *CODIGO DE LA EMPRESA MVT:*
 
 *** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo
+
+
 
 
 
