@@ -50,6 +50,18 @@ Los campos que se deben configurar son los siguientes:
 
 *** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo
 
+** *CENTRO DE COSTO:*
+
+*** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo. Deben ser 4 posiciones n&#241;mericas
+
+** *SUB CENTRO DE COSTO:*
+
+*** C&#243;digo asignado a cada Colegio. Se asigna dicho c&#243;digo. Deben ser 4 posiciones n&#241;mericas
+
+
+
+
+
 
 
 
