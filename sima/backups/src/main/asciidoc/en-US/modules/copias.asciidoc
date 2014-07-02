@@ -1,0 +1,145 @@
+[[copias]]
+
+////
+a=&#225; e=&#233; i=&#237; o=&#243; u=&#250;
+
+A=&#193; E=&#201; I=&#205; O=&#211; U=&#218;
+
+n=&#241; N=&#209;
+////
+
+== CONFIGURAR LAS COPIAS DE SEGURIDAD
+
+=== OBJETIVO
+
+Documentar las actividades que se deben tener presente para habilitar las copias de seguiridad del SIMA.
+
+=== ALCANCE
+
+Configurar las copias de seguridad de los archivos que pertencen al SIMA de todos los a&#241;os habilitados en el sistema.
+
+=== RESPONSABLES
+
+* Administrador en cada colegio de administrar el SIMA.
+
+=== ASPECTOS GENERALES
+
+* Este procedimiento es de estricto cumplimiento.
+
+* Para aplicar cualquier actualizaci&#243;n del SIMA, debe estar configurado, habilitado y en ejecuci&#243;n las copias de seguridad.
+
+=== PREREQUISITOS
+
+==== INSTALACI&#211;N DEL JAVA
+
+La instalaci&#243;n del java es necesaria para poder utilizar el Apache Ant.
+
+Los pasos para instalar el java son los siguientes:
+
+. *Descargar Java:* http://www.oracle.com/technetwork/es/java/javase/downloads/index.html[http://www.oracle.com/technetwork/es/java/javase/downloads/index.html]
+
+. *Directorio de descarga:*\download\java
+
+. *Directorio de Instalaci&#243;n:* C:\Program Files\Java
+
+. *Configurar la variable de Entorno:* JAVA_HOME. Ejemplo: =C:\Program Files\Java
+
+. *Configurar la variable de Entorno:* JAVA_OPTS=*-Xms512m -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=512m*
+
+. *Configurar el Java al Path del windows.* Ejemplos: ...; %JAVA_HOME%\bin
+
+. *Ejecutar la prueba de Instalaci&#243;n:* java - version
+
+==== INSTALACI&#211;N DEL APACHE ANT
+
+Para las copias se seguridad se utiliza el Apache Ant que es una herramienta usada para la realizaci&#243;n de tareas mec&#225;nicas y repetitivas,
+esta herramienta esta hecha en el lenguaje de programaci&#243;n Java y por esta raz&#243;n se de debe instalar el Java.
+
+Los pasos para instalar el Apache Ant son los siguientes:
+
+. *Descargar el Ant:* http://ant.apache.org/bindownload.cgi[http://ant.apache.org/bindownload.cgi]
+
+. *Directorio de descarga:* c:\download\ant
+
+. *Directorio de Instalaci&#243;n:* c:\javajdk\apache-ant
+
+. *Configurar la variable de Entorno:* ANT_HOME. Ejemplo: =c:\javajdk\apache-ant
+
+. *Configurar el Apache Ant al Path del windows.* Ejemplos: ...; %ANT_HOME%\bin
+
+. *Ejecutar la prueba de Instalaci&#243;n:* ant - version
+
+==== DESCARGAR LOS SCRIPTS DE ANT PARA SACAR LAS COPIAS DEL SIMA
+
+Estos scripts son archivos .xml con las etiquetas de Ant configuradas para generar la copia se seguridad de los archivos del SIMA.
+
+Los actividades que se deben realizar son las siguientes:
+
+. *Descargar el archivo:* http://www.simavirtual.com/njava/sima/bak/ant/simabak.zip[simabak.zip]
+
+. *Descomprimir el archivo:* simabak.zip
+
+. *Copiar los siguientes archivos al directorio del sima:* ..\sima\
+
+.. build.xml
+
+.. simabak.bat
+
+.. simabak.xml
+
+.. simabak-otros.xml
+
+. Los archivos copiados deben quedar ubicados en la siguiente estructura de directorios:
+
+[source, console]
+----
+ SIMA
+   +--- SIMAMATR
+   |      |
+   +--- SIMACART
+   .
+   .
+   .
+   +--- build.xml
+   +--- simabak.bat
+   +--- simabak.xml
+   +--- simabak-otros.xml
+----
+
+=== SACAR LA COPIA DE SEGURIDAD DIARIA MANUAL
+
+Una vez se hayan realizado todos los PREREQUISITOS se deben generar la copia diaria realizando los siguientes pasos:
+
+. Abrir la consola del D.O.S y ubicarse en el directorio del SIMA:
+
+  cd \SIMA
+
+. Ejecutar el archivo simabak.bat:
+
+  ant[Enter]
+
+TIP: Al generar la copia de seguridad se debe asegurar que nadie este utilizando el SIMA.
+
+=== SACAR LA COPIA DE SEGURIDAD DIARIA CON TAREA PROGRAMADA
+
+Se puede programar una tarea programada de windows para generar las copias automaticamente para esto se debe utilizar el archivo *simabak.bat*
+
+El contenido del archivo: *simabak.bat* es el siguiente:
+
+[source, console]
+----
+c:             -> Unidad donde se encuentra instalado el SIMA
+cd \sima\sima  -> Directorio del SIMA
+ant            -> Ejecuci&#243;n del Apache Ant
+----
+
+TIP: El directorio: cd \sima\sima se utiliza para compartir la carpeta en el servidor.
+
+
+
+
+
+
+
+
+

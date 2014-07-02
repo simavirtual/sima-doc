@@ -1,0 +1,332 @@
+[[facturacion]]
+
+////
+a=&#225; e=&#233; i=&#237; o=&#243; u=&#250;
+
+A=&#193; E=&#201; I=&#205; O=&#211; U=&#218;
+
+n=&#241; N=&#209;
+////
+
+== ACTIVIDADES DE LA FACTURACION
+
+=== DEFINICION
+
+El proceso de la facturación es el objetivo principal del sistema de control de ingresos y tiene que ver con las actividades operativas, administrativas y
+técnicas que se deben realizar para garantizar que los recibos de cada mes se emitan correctamente.
+
+En el proceso de la facturación existen varios factores o actividades que se deben entender y dominar, estos son:
+
+* EL ESTADO DE CUENTA
+
+* LOS ELEMENTOS DE LA FACTURACION
+
+* ACTIVIDADES DESPUES DE LA FACTURACION.
+
+* ACTIVIDADES ANTES DE IMPRIMIR LOS RECIBOS.
+
+En estas actividades se deben aplicar simultáneamente los controles internos y externos
+respectivamente, y no se debe esperar al final del mes para aplicarlos.
+
+Es decir todos los recibos que se emitan se deben revisar al instante y una vez se cancelen confrontar su valor y verificar que se haya
+hecho efectivo.
+
+=== EL ESTADO DE CUENTA
+
+El estado de cuenta de un estudiante es el registro de cada uno de los recibos que se le han generado y la forma
+como los ha cancelado, su interpretación da como resultado el calculo de su deuda en cualquier momento dado.
+
+Para su correcta interpretación se deben dominar cada uno de los items que lo conforman y las fórmulas que lo gobiernan.
+
+El Estado de cuenta lo conforman los siguientes items:
+
+*MES ACTUAL*::
+  Es el mes escogido para un proceso específico.
+
+*MES ANTERIOR*::
+  Es cualquier mes anterior al mes actual.
+
+*DEUDA*::
+  Es el valor que se debe sin incluir los intereses.
+
+*MORA*::
+  Es el valor de los intereses de la DEUDA
+
+Los intereses por cobrar sean actuales o anteriores en el sistema se conocen  como mora
+
+*SALDO*::
+  Es la DEUDA mas la MORA
+
+*DEUDA ANTERIOR*::
+  Es la Deuda del mes Anterior sin incluir los intereses por cobrar del mismo mes.
+
+*SALDO ANTERIOR*::
+  Es la Deuda Anterior mas los Intereses por Cobrar del mismo mes.
+
+*VALOR DEL MES*::
+  Es la sumatoria de los servicios que se cobran por un solo mes.
+
+*VALOR A PAGAR*::
+  Es el total del recibo a pagar en el mes, en fecha de pago oportuna y equivale a sumar el Saldo Anterior mas el Valor del Mes.
+
+*ESTADO*::
+  Es la forma como se pagó el recibo
+
+*FECHA DE PAGO OPORTUNO*::
+  Es la primera fecha límite para pagar el recibo oportunamente.
+
+Antes de esta fecha no se cobran intereses y después se empiezan a cobrar intereses por pago extemporáneo.
+
+*FECHA DE PAGO EXTEMPORANEO*::
+  Es la segunda fecha límite para poder pagar el recibo.
+
+Después de esta fecha el padre se considera deudor para el mes.
+
+*INTERES POR PAGO EXTEMPORANEO*::
+  Es el porcentaje que se cobra por pago extemporáneo o el no pago del recibo. Ejemplo: 2.25%
+
+*SALDO ACTUAL*::
+  Es la Deuda Actual a la fecha mas los Intereses por cobrar.
+
+* El SALDO ACTUAL durante el transcurso del mes varia de acuerdo a la fecha:
+
+* Si se encuentra dentro de la fecha de pago es igual a:
+
+** SALDO ACTUAL  =  SALDO ANTERIOR
+
+* Si se encuentra fuera de la fecha de pago y no paga el recibo es igual a:
+
+** SALDO ACTUAL = SALDO ANTERIOR + VALOR DEL MES+ INT POR COBRAR
+
+Entonces:
+
+* El Saldo Actual se convierte en el Saldo Anterior en el momento que se genera el siguiente recibo, igual sucede para los intereses por cobrar.
+
+* Saldo Actual = Saldo Anterior
+
+* Intereses por Cobrar = Mora Anterior = Mora Actual
+
+*DEUDA ACTUAL*::
+  Es la Deuda a la fecha sin incluir los intereses por cobrar.
+
+*INTERESES POR COBRAR*::
+  Es el  total de los intereses por cobrar del mes mas los intereses por cobrar del mes anterior
+
+Ejemplo:
+
+* Para una pensión por valor de $ 100,000 y un interes del 4% para el pago extemporáneo o no pago del recibo.
+
+.ESTADO DE CUENTA
+[options="header"]
+|===================================================================
+|MES|DEUDA   |+ MORA |+ VLR MES|= VLR A PAGAR|ESTADO |F.OPO |F.EXT |
+|FEB|  0     |  0    |100,000  |100,000      |NO PAGO|FEB 15|FEB 27|
+|MAR|100,000 |4,000  |100,000  |204,000      |NO PAGO|MAR 15|MAR 29|
+|ABR|200,000 |12,000 |100,000  |312,000      |NO PAGO|ABR 15|ABR 29|
+|MAY|300,000 |24,000 |         |             |       |      |      |
+|===================================================================
+
+PARA EL MES DE ABRIL TENEMOS:
+
+* *DEUDA ANTERIOR* = 200,000  =  100,000 + 100,000
+
+* *MORA  ANTERIOR*  +   12,000  =  (200,000*4%)=8,000 + 4,000
+
+* *SALDO ANTERIOR* =  212,000  =  200,000 + 12,000
+
+* *VALOR DEL  MES*    +  100,000  = SUMA DE TODOS LOS CONCEPTOS PARA EL MES
+
+* *VALOR A PAGAR*   =  312,000  =  212,000 + 100,000
+
+* *ESTADO*                    =  NO PAGO
+
+* *DEUDA ACTUAL*   =  300,000  =  200,000 + 100,000
+
+* *MORA  ACTUAL*   +     24,000  = (300,000*4%)=12,000 + 12,000
+
+* *SALDO ACTUAL*   =  324,000
+
+* *EN QUE DIA DEL MES DE ABRIL  SE CONSIDERA DEUDOR?*
+
+* *SALDO ACTUAL  ANTES DE ABRIL 15* = 212,000
+
+* *SALDO ACTUAL  DESPUES DE ABRIL 29* = 324,000
+
+*FORMULAS:*
+
+* *INTERES  POR COBRAR*  =  INTERES  POR COBRAR DEL MES + INTERES POR COBRAR DEL MES ANTERIOR
+
+* *INTERES POR COBRAR DEL MES* = DEUDA ACTUAL  * INTERES POR PAGO EXTEMPORANEO %
+
+* *DEUDA ACTUAL*  =  DEUDA ANTERIOR  + VALOR DEL MES
+
+* *SALDO ACTUAL*  =  DEUDA ACTUAL + INTERESES POR COBRAR
+
+Las novedades o correcciones que cambian el estado de cuenta son el cambio de la forma de pago y los abonos.
+
+Para el caso de la forma de pago el sistema permite modificar los últimos dos recibos y cuando se aplica un abono el sistema
+lo refleja también en los dos últimos recibos.
+
+=== LOS ELEMENTOS DE LA FACTURACION
+
+Los elementos principales de la facturación son aquellos que se reflejan en el  estado de cuenta y los principales son:
+
+* LOS ABONOS
+
+* LOS DESCUENTOS Y RECARGOS
+
+* LAS AYUDAS EDUCATIVAS
+
+* LAS FECHAS PARA EL PAGO DE LOS RECIBOS.
+
+
+==== LOS ABONOS
+
+Los abonos son una disminución a la deuda y de acuerdo a la fecha del abono se toma el saldo anterior o el saldo actual.
+
+Para entender como se aplica un abono se deben dominar los conceptos  del estado de cuenta de un estudiante.
+
+Cuando se aplica un abono el sistema recalcula los registros de los dos últimos recibos para ajustar el abono.
+
+*NOTAS:*
+
+* Los abonos no cambian la forma de pago de los recibos.
+
+*EJEMPLO No. 1*
+
+Aplicar un abono por $ 100,000 del 5 de Abril.
+
+Para aplicar el abono y recalcular los registros se deben seguir los siguientes procedimientos teniendo como base el estado de cuenta del ejemplo:
+
+*  *Calcular el porcentaje de la proporción de la deuda anterior y los intereses por cobrar*
+
+200,000 => 100 %  X = (12,000 * 100)/200,000 =  6%  => X = 6%
+ 12,000 =>  X
+
+* *Restar el abono del Sal  do Anterior para calcular el nuevo saldo:*
+
+SALDO ANTERIOR = 212,000 - 100,000 = 112,000
+
+*  *Calcular la Deuda Anterior a partir del nuevo Saldo Anterior:*
+
+112,000  =>  106 %    X = (112,000 * 100)/106  =  105,660.37 => X = 105,660 Deuda Anterior
+    X    =>  100
+
+* *Por diferencia calcular el nuevo interés por Cobrar Anterior*
+
+ 112,000  SALDO ANTERIOR
+ 105,660  DEUDA ANTERIOR
+ -------
+   6,340  INTERESES POR COBRAR
+
+Recuerde: *SALDO ACTUAL =  DEUDA ACTUAL + INTERESES POR COBRAR*
+
+* *Armar el nuevo estado de cuenta reflejando el abono*
+
+.ESTADO DE CUENTA
+[options="header"]
+|===================================================================
+|MES|DEUDA   |+ MORA |+ VLR MES|= VLR A PAGAR|ESTADO |F.OPO |F.EXT |
+|FEB|  0     |  0    |100,000  |100,000      |NO PAGO|FEB 15|FEB 27|
+|MAR|100,000 | 4,000 |100,000  |204,000      |NO PAGO|MAR 15|MAR 29|
+|ABR|105,660 | 6,340 |100,000  |212,000      |NO PAGO|ABR 15|ABR 29|
+|MAY|205,660 |14,566 |         |             |       |      |      |
+|===================================================================
+
+* *SALDO ANTERIOR = 112,000  ANTES DE ABRIL 15*
+
+* *SALDO ACTUAL = 220,226  A PARTIR DE ABRIL 30*
+
+
+*EJEMPLO No. 2*
+
+* *Aplicar un abono por $ 100,000 del 30 de Abril.*
+
+Para aplicar el abono y recalcular los registros se deben seguir los siguientes procedimientos teniendo como base el estado de cuenta del ejemplo:
+
+* *Calcular el porcentaje de la proporción del la deuda Actual y los intereses por cobrar*
+
+300,000 => 100 %  X = (24,000 * 100)/300,000 =  8%  => X = 8%
+ 24,000 =>  X
+
+* *Restar el abono del Saldo Actual para calcular el nuevo saldo:*
+
+SALDO ACTUAL = 324,000 - 100,000 = 224,000
+
+* *Calcular la Deuda Actual a partir del nuevo Saldo Actual:*
+
+224,000 => 108%  X = (224,000 * 100)/108  =  207,407.4  => X = 207,407 Deuda Actual
+  X     => 100
+
+* *Por diferencia calcular el nuevo interés por Cobrar Actual*
+
+  224,000  SALDO ACTUAL DESPUES DEL ABONO
+ -207,407  DEUDA ACTUAL
+   ======
+   16,593 INTERESES POR COBRAR
+
+Recuerde: *SALDO ACTUAL =  DEUDA ACTUAL + INTERESES POR COBRAR*
+
+
+* *Calcular el Interés por Cobrar del Mes*
+
+207,407 => 100%  X = 8296  Intereses por cobrar del mes
+  X         4%
+
+* *Por diferencia calcular el Intereses por Cobrar Anterior:*
+
+  16,493  INTERESES POR COBRAR
+ - 8,296  INTERESES POR COBRAR DEL MES
+   =====
+   8,197  INTERESES POR COBRAR ANTERIOR
+
+Recuerde: *INTERESES POR COBRAR  = INTERES POR COBRAR DEL MES + INTERES POR COBRAR DEL MES ANTERIOR*
+
+* *Calcular la Deuda Anterior:*
+
+8,197 => 6%    X = (8,197 * 100) / 6  =  136,616.66  => X = 136,617 Deuda Anterior
+  X      100%
+
+* Calcular el valor del Mes:*
+
+ 207,407 +SALDO ACTUAL
+ 136,617 -DEUDA ANTERIOR
+ ======
+  70,790 = VALOR DEL MES..
+
+Recuerde: *DEUDA ACTUAL = DEUDA ANTERIOR  + VALOR DEL MES*
+
+* *Armar el nuevo estado de cuenta reflejando el abono.*
+
+.ESTADO DE CUENTA
+[options="header"]
+|===================================================================
+|MES|DEUDA   |+ MORA |+ VLR MES|= VLR A PAGAR|ESTADO |F.OPO |F.EXT |
+|FEB|  0     |  0    |100,000  |100,000      |NO PAGO|FEB 15|FEB 27|
+|MAR|100,000 | 4,000 |100,000  |204,000      |NO PAGO|MAR 15|MAR 29|
+|ABR|136,617 | 8,197 | 70,790  |215,604      |NO PAGO|ABR 15|ABR 29|
+|MAY|207,407 |16,593 |         |             |       |      |      |
+|===================================================================
+
+* *SALDO  ANTERIOR = 144,814  ANTES DE ABRIL 15*
+
+* *SALDO ACTUAL = 224,000 A PARTIR DE ABRIL 30*
+
+
+==== LOS DESCUENTOS Y RECARGOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
