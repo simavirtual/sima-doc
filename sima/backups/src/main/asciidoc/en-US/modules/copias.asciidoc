@@ -75,9 +75,9 @@ Estos scripts son archivos .xml con las etiquetas de Ant configuradas para gener
 
 Los actividades que se deben realizar son las siguientes:
 
-. *Descargar el archivo:* http://www.simavirtual.com/njava/sima/bak/ant/simabak.zip[simabak.zip]
+. *Descargar el archivo:* http://www.simavirtual.com/njava/sima/download/antbak.zip[antbak.zip]
 
-. *Descomprimir el archivo:* simabak.zip
+. *Descomprimir el archivo:* antbak.zip
 
 . *Copiar los siguientes archivos al directorio del sima:* ..\sima\
 
