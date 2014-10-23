@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<?asciidoc-numbered?>
+
+<book lang="en">
+  <bookinfo>
+    
+    <title>MANUAL DEL TESORERO</title>
+    
+    
+    <date>2014-09-22</date>
+    
+    
+    
+    
+<!--<subtitle>Some subtitle</subtitle -->
+<!--
+<releaseinfo>4.0.0-SNAPSHOT</releaseinfo>
+<corpauthor>
+   <inlinemediaobject>
+      <imageobject>
+         <imagedata fileref="./images/hibernate_ogm_600px.png"
+                    format="PNG"
+                    scalefit="1"
+                    width="444"/>
+      </imageobject>
+      <textobject>
+         <phrase>Logo</phrase>
+      </textobject>
+   </inlinemediaobject>
+</corpauthor>
+
+<authorgroup xml:base="Author_Group.xml">
+   <author>
+      <firstname>Emmanuel</firstname>
+      <surname>Bernard</surname>
+      <affiliation>
+         <shortaffil>Red Hat</shortaffil>
+      </affiliation>
+   </author>
+   <author>
+      <firstname>Sanne</firstname>
+      <surname>Grinovero</surname>
+      <affiliation>
+         <shortaffil>Red Hat</shortaffil>
+      </affiliation>
+   </author>
+   <collab>
+     <collabname>Guillaume Scheibel</collabname>
+   </collab>
+</authorgroup>
+ -->
+
+<authorgroup xml:base="Author_Group.xml">
+   <author>
+      <firstname>SIMASOFT</firstname>
+      <affiliation>
+         <shortaffil>SIMAVIRTUAL</shortaffil>
+      </affiliation>
+   </author>
+</authorgroup>
+    
+    
+
+  </bookinfo>
+<chapter id="introducion">
+<title>PENDIENTES</title>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>estudiantes no facturados antes de imprimir y revisar este listado antes de entregar los recibos para detectar errores.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Listas de Chequeo.</simpara>
+      
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Listas de cheque reportes que se deben archivar.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Se imprime el recibo aplicando un recargo por el recibo que no se factur�.</simpara>
+      
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>si se envia por correo la facturacion debe ser escaneada del informe que se archiva en el colegio. y que el se envia por escrito por correo
+debe ser igual a la del archivo.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+</chapter>
+<chapter id="_introducion">
+<title>INTRODUCION</title>
+<section id="_objetivo">
+<title>OBJETIVO</title>
+<simpara>Documentar las actividades que se deben tener presente para el buen manejo del sistema del control de ingresos para la correcta facturaci�n de los recibos
+de pago por concepto de los servicios educativos.</simpara>
+</section>
+<section id="_alcance">
+<title>ALCANCE</title>
+<simpara>Este documento aplica a para el sistema de control de ingresos.SIMACART.</simpara>
+</section>
+<section id="_responsables">
+<title>RESPONSABLES</title>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Tesorero o persona encargada de facturar los recibos de pago en cada instituci�n educativa.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Departamento de cartera del distrito por ser un requisito de hacer cumplir.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+</section>
+<section id="_aspectos_generales">
+<title>ASPECTOS GENERALES</title>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Este manual es de estricto cumplimiento.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>El manual del tesorero lo debe conocer el departamento de contabilidad del distrito, por interaci�n de procesos para entender las actividades que se
+realizan en el sistema de facturaci�n, que son el soporte de los movimientos contables.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+</section>
+<section id="_procesos_del_sistema_de_facturacion">
+<title>PROCESOS DEL SISTEMA DE FACTURACION</title>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>El sistema de facturaci�n es el encargado de facturar los conceptos por servicios educativos a los padres de familia y por esta raz�n
+se convierte en un sistema de control de ingresos.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>El sistema de control de ingresos esta conformado por tres procesos claramente identificables y los cuales deben estar muy bien interconectados
+para garantizar el buen funcionamiento del sistema. Estos son:</simpara>
+      
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Procesos de tipo administrativo.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Procesos de tipo t�cnico.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Procesos de tipo operativo.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<section id="_procesos_de_tipo_administrativo">
+<title>PROCESOS DE TIPO ADMINISTRATIVO</title>
+<simpara>Son todos los controles y pol�ticas que se deben tener presentes para garantizar que todos los procesos que involucre el sistema sean correctos y confiables.</simpara>
+<simpara>Los controles deben ser de dos tipos internos y externos</simpara>
+</section>
+<section id="_procesos_de_tipo_tecnico">
+<title>PROCESOS DE TIPO TECNICO</title>
+<simpara>Son todos aquellos procesos que tienen que ver con la evoluci�n y mantenimiento del Software o programa.</simpara>
+<simpara>Mantenimiento es cuando se corrigen errores y evoluci�n cuando se responde a requerimientos nuevos o que cambian.</simpara>
+</section>
+<section id="_procesos_de_tipo_operativo">
+<title>PROCESOS DE TIPO OPERATIVO</title>
+<simpara>Los procesos operativos tienen que ver con el buen manejo del programa u operaci�n del sistema</simpara>
+<simpara>Desde un punto de vista operativo las actividades que se deben realizar en el sistema las podemos clasificar en tres:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>ACTIVIDADES DE LA FACTURACION.   "Es el objetivo principal del sistema"</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LA CONCILIACION DE LA CARTERA. "Es el control principal interno"</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LA CONCILIACION DEL ESTRACTO.   "Es el control principal externo"</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LA CONCILIACION DE LA CONTABILIDAD. "Es el control contable o auditor�a del Sistema.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+</section>
+</section>
+</chapter>
+<chapter id="_actividades_de_la_facturacion">
+<title>ACTIVIDADES DE LA FACTURACION</title>
+<section id="_definicion">
+<title>DEFINICION</title>
+<simpara>El proceso de la facturaci�n es el objetivo principal del sistema de control de ingresos y tiene que ver con las actividades operativas, administrativas y
+t�cnicas que se deben realizar para garantizar que los recibos de cada mes se emitan correctamente.</simpara>
+<simpara>En el proceso de la facturaci�n existen varios factores o actividades que se deben entender y dominar, estos son:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>EL ESTADO DE CUENTA</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LOS ELEMENTOS DE LA FACTURACION</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>ACTIVIDADES DESPUES DE LA FACTURACION.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>ACTIVIDADES ANTES DE IMPRIMIR LOS RECIBOS.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>En estas actividades se deben aplicar simult�neamente los controles internos y externos
+respectivamente, y no se debe esperar al final del mes para aplicarlos.</simpara>
+<simpara>Es decir todos los recibos que se emitan se deben revisar al instante y una vez se cancelen confrontar su valor y verificar que se haya
+hecho efectivo.</simpara>
+</section>
+<section id="_el_estado_de_cuenta">
+<title>EL ESTADO DE CUENTA</title>
+<simpara>El estado de cuenta de un estudiante es el registro de cada uno de los recibos que se le han generado y la forma
+como los ha cancelado, su interpretaci�n da como resultado el calculo de su deuda en cualquier momento dado.</simpara>
+<simpara>Para su correcta interpretaci�n se deben dominar cada uno de los items que lo conforman y las f�rmulas que lo gobiernan.</simpara>
+<simpara>El Estado de cuenta lo conforman los siguientes items:</simpara>
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">MES ACTUAL</emphasis></term>
+<listitem>
+<simpara>Es el mes escogido para un proceso espec�fico.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">MES ANTERIOR</emphasis></term>
+<listitem>
+<simpara>Es cualquier mes anterior al mes actual.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">DEUDA</emphasis></term>
+<listitem>
+<simpara>Es el valor que se debe sin incluir los intereses.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">MORA</emphasis></term>
+<listitem>
+<simpara>Es el valor de los intereses de la DEUDA</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>Los intereses por cobrar sean actuales o anteriores en el sistema se conocen  como mora</simpara>
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">SALDO</emphasis></term>
+<listitem>
+<simpara>Es la DEUDA mas la MORA</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">DEUDA ANTERIOR</emphasis></term>
+<listitem>
+<simpara>Es la Deuda del mes Anterior sin incluir los intereses por cobrar del mismo mes.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">SALDO ANTERIOR</emphasis></term>
+<listitem>
+<simpara>Es la Deuda Anterior mas los Intereses por Cobrar del mismo mes.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">VALOR DEL MES</emphasis></term>
+<listitem>
+<simpara>Es la sumatoria de los servicios que se cobran por un solo mes.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">VALOR A PAGAR</emphasis></term>
+<listitem>
+<simpara>Es el total del recibo a pagar en el mes, en fecha de pago oportuna y equivale a sumar el Saldo Anterior mas el Valor del Mes.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">ESTADO</emphasis></term>
+<listitem>
+<simpara>Es la forma como se pag� el recibo</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">FECHA DE PAGO OPORTUNO</emphasis></term>
+<listitem>
+<simpara>Es la primera fecha l�mite para pagar el recibo oportunamente.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>Antes de esta fecha no se cobran intereses y despu�s se empiezan a cobrar intereses por pago extempor�neo.</simpara>
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">FECHA DE PAGO EXTEMPORANEO</emphasis></term>
+<listitem>
+<simpara>Es la segunda fecha l�mite para poder pagar el recibo.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>Despu�s de esta fecha el padre se considera deudor para el mes.</simpara>
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">INTERES POR PAGO EXTEMPORANEO</emphasis></term>
+<listitem>
+<simpara>Es el porcentaje que se cobra por pago extempor�neo o el no pago del recibo. Ejemplo: 2.25%</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">SALDO ACTUAL</emphasis></term>
+<listitem>
+<simpara>Es la Deuda Actual a la fecha mas los Intereses por cobrar.</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>El SALDO ACTUAL durante el transcurso del mes varia de acuerdo a la fecha:</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Si se encuentra dentro de la fecha de pago es igual a:</simpara>
+      
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>SALDO ACTUAL  =  SALDO ANTERIOR</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Si se encuentra fuera de la fecha de pago y no paga el recibo es igual a:</simpara>
+      
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>SALDO ACTUAL = SALDO ANTERIOR + VALOR DEL MES+ INT POR COBRAR</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>Entonces:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>El Saldo Actual se convierte en el Saldo Anterior en el momento que se genera el siguiente recibo, igual sucede para los intereses por cobrar.</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Saldo Actual = Saldo Anterior</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>Intereses por Cobrar = Mora Anterior = Mora Actual</simpara>
+      
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">DEUDA ACTUAL</emphasis></term>
+<listitem>
+<simpara>Es la Deuda a la fecha sin incluir los intereses por cobrar.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><emphasis role="strong">INTERESES POR COBRAR</emphasis></term>
+<listitem>
+<simpara>Es el  total de los intereses por cobrar del mes mas los intereses por cobrar del mes anterior</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Ejemplo:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Para una pensi�n por valor de $ 100,000 y un interes del 4% para el pago extempor�neo o no pago del recibo.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<table frame="all"
+    rowsep="1" colsep="1">
+<title>ESTADO DE CUENTA</title>
+  
+  <tgroup cols="9">
+    
+    <colspec colname="col_1" colwidth="11*"/>
+    
+    <colspec colname="col_2" colwidth="11*"/>
+    
+    <colspec colname="col_3" colwidth="11*"/>
+    
+    <colspec colname="col_4" colwidth="11*"/>
+    
+    <colspec colname="col_5" colwidth="11*"/>
+    
+    <colspec colname="col_6" colwidth="11*"/>
+    
+    <colspec colname="col_7" colwidth="11*"/>
+    
+    <colspec colname="col_8" colwidth="11*"/>
+    
+    <colspec colname="col_9" colwidth="11*"/>
+    
+    
+    <thead>
+      
+      <row>
+        
+        <entry align="left" valign="top">MES</entry>
+        
+        <entry align="left" valign="top">DEUDA</entry>
+        
+        <entry align="left" valign="top">+ MORA</entry>
+        
+        <entry align="left" valign="top">+ VLR MES</entry>
+        
+        <entry align="left" valign="top">= VLR A PAGAR</entry>
+        
+        <entry align="left" valign="top">ESTADO</entry>
+        
+        <entry align="left" valign="top">F.OPO</entry>
+        
+        <entry align="left" valign="top">F.EXT</entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </thead>
+    
+    <tbody>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>FEB</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 27</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>4,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>204,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>ABR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>200,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>12,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>312,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAY</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>300,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>24,000</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </tbody>
+    
+  </tgroup>
+</table>
+<simpara>PARA EL MES DE ABRIL TENEMOS:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">DEUDA ANTERIOR</emphasis> = 200,000  =  100,000 + 100,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">MORA  ANTERIOR</emphasis>  +   12,000  =  (200,000*4%)=8,000 + 4,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ANTERIOR</emphasis> =  212,000  =  200,000 + 12,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">VALOR DEL  MES</emphasis>    +  100,000  = SUMA DE TODOS LOS CONCEPTOS PARA EL MES</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">VALOR A PAGAR</emphasis>   =  312,000  =  212,000 + 100,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">ESTADO</emphasis>                    =  NO PAGO</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">DEUDA ACTUAL</emphasis>   =  300,000  =  200,000 + 100,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">MORA  ACTUAL</emphasis>   +     24,000  = (300,000*4%)=12,000 + 12,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL</emphasis>   =  324,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">EN QUE DIA DEL MES DE ABRIL  SE CONSIDERA DEUDOR?</emphasis></simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL  ANTES DE ABRIL 15</emphasis> = 212,000</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL  DESPUES DE ABRIL 29</emphasis> = 324,000</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara><emphasis role="strong">FORMULAS:</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">INTERES  POR COBRAR</emphasis>  =  INTERES  POR COBRAR DEL MES + INTERES POR COBRAR DEL MES ANTERIOR</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">INTERES POR COBRAR DEL MES</emphasis> = DEUDA ACTUAL  * INTERES POR PAGO EXTEMPORANEO %</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">DEUDA ACTUAL</emphasis>  =  DEUDA ANTERIOR  + VALOR DEL MES</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL</emphasis>  =  DEUDA ACTUAL + INTERESES POR COBRAR</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Las novedades o correcciones que cambian el estado de cuenta son el cambio de la forma de pago y los abonos.</simpara>
+<simpara>Para el caso de la forma de pago el sistema permite modificar los �ltimos dos recibos y cuando se aplica un abono el sistema
+lo refleja tambi�n en los dos �ltimos recibos.</simpara>
+</section>
+<section id="_los_elementos_de_la_facturacion">
+<title>LOS ELEMENTOS DE LA FACTURACION</title>
+<simpara>Los elementos principales de la facturaci�n son aquellos que se reflejan en el  estado de cuenta y los principales son:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>LOS ABONOS</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LOS DESCUENTOS Y RECARGOS</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LAS AYUDAS EDUCATIVAS</simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara>LAS FECHAS PARA EL PAGO DE LOS RECIBOS.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<section id="_los_abonos">
+<title>LOS ABONOS</title>
+<simpara>Los abonos son una disminuci�n a la deuda y de acuerdo a la fecha del abono se toma el saldo anterior o el saldo actual.</simpara>
+<simpara>Para entender como se aplica un abono se deben dominar los conceptos  del estado de cuenta de un estudiante.</simpara>
+<simpara>Cuando se aplica un abono el sistema recalcula los registros de los dos �ltimos recibos para ajustar el abono.</simpara>
+<simpara><emphasis role="strong">NOTAS:</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Los abonos no cambian la forma de pago de los recibos.</simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara><emphasis role="strong">EJEMPLO No. 1</emphasis></simpara>
+<simpara>Aplicar un abono por $ 100,000 del 5 de Abril.</simpara>
+<simpara>Para aplicar el abono y recalcular los registros se deben seguir los siguientes procedimientos teniendo como base el estado de cuenta del ejemplo:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular el porcentaje de la proporci�n de la deuda anterior y los intereses por cobrar</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>200,000 &#8658; 100 %  X = (12,000 * 100)/200,000 =  6%  &#8658; X = 6%
+ 12,000 &#8658;  X</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Restar el abono del Sal  do Anterior para calcular el nuevo saldo:</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>SALDO ANTERIOR = 212,000 - 100,000 = 112,000</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular la Deuda Anterior a partir del nuevo Saldo Anterior:</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>112,000  &#8658;  106 %    X = (112,000 * 100)/106  =  105,660.37 &#8658; X = 105,660 Deuda Anterior
+    X    &#8658;  100</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Por diferencia calcular el nuevo inter�s por Cobrar Anterior</emphasis></simpara>
+      
+
+<literallayout class="monospaced">112,000  SALDO ANTERIOR
+105,660  DEUDA ANTERIOR
+-------
+  6,340  INTERESES POR COBRAR</literallayout>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Recuerde: <emphasis role="strong">SALDO ACTUAL =  DEUDA ACTUAL + INTERESES POR COBRAR</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Armar el nuevo estado de cuenta reflejando el abono</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<table frame="all"
+    rowsep="1" colsep="1">
+<title>ESTADO DE CUENTA</title>
+  
+  <tgroup cols="9">
+    
+    <colspec colname="col_1" colwidth="11*"/>
+    
+    <colspec colname="col_2" colwidth="11*"/>
+    
+    <colspec colname="col_3" colwidth="11*"/>
+    
+    <colspec colname="col_4" colwidth="11*"/>
+    
+    <colspec colname="col_5" colwidth="11*"/>
+    
+    <colspec colname="col_6" colwidth="11*"/>
+    
+    <colspec colname="col_7" colwidth="11*"/>
+    
+    <colspec colname="col_8" colwidth="11*"/>
+    
+    <colspec colname="col_9" colwidth="11*"/>
+    
+    
+    <thead>
+      
+      <row>
+        
+        <entry align="left" valign="top">MES</entry>
+        
+        <entry align="left" valign="top">DEUDA</entry>
+        
+        <entry align="left" valign="top">+ MORA</entry>
+        
+        <entry align="left" valign="top">+ VLR MES</entry>
+        
+        <entry align="left" valign="top">= VLR A PAGAR</entry>
+        
+        <entry align="left" valign="top">ESTADO</entry>
+        
+        <entry align="left" valign="top">F.OPO</entry>
+        
+        <entry align="left" valign="top">F.EXT</entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </thead>
+    
+    <tbody>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>FEB</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 27</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>4,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>204,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>ABR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>105,660</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>6,340</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>212,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAY</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>205,660</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>14,566</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </tbody>
+    
+  </tgroup>
+</table>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ANTERIOR = 112,000  ANTES DE ABRIL 15</emphasis></simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL = 220,226  A PARTIR DE ABRIL 30</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara><emphasis role="strong">EJEMPLO No. 2</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Aplicar un abono por $ 100,000 del 30 de Abril.</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Para aplicar el abono y recalcular los registros se deben seguir los siguientes procedimientos teniendo como base el estado de cuenta del ejemplo:</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular el porcentaje de la proporci�n del la deuda Actual y los intereses por cobrar</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>300,000 &#8658; 100 %  X = (24,000 * 100)/300,000 =  8%  &#8658; X = 8%
+ 24,000 &#8658;  X</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Restar el abono del Saldo Actual para calcular el nuevo saldo:</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>SALDO ACTUAL = 324,000 - 100,000 = 224,000</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular la Deuda Actual a partir del nuevo Saldo Actual:</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>224,000 &#8658; 108%  X = (224,000 * 100)/108  =  207,407.4  &#8658; X = 207,407 Deuda Actual
+  X     &#8658; 100</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Por diferencia calcular el nuevo inter�s por Cobrar Actual</emphasis></simpara>
+      
+
+<literallayout class="monospaced"> 224,000  SALDO ACTUAL DESPUES DEL ABONO
+-207,407  DEUDA ACTUAL
+  ======
+  16,593 INTERESES POR COBRAR</literallayout>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Recuerde: <emphasis role="strong">SALDO ACTUAL =  DEUDA ACTUAL + INTERESES POR COBRAR</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular el Inter�s por Cobrar del Mes</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>207,407 &#8658; 100%  X = 8296  Intereses por cobrar del mes
+  X         4%</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Por diferencia calcular el Intereses por Cobrar Anterior:</emphasis></simpara>
+      
+
+<literallayout class="monospaced"> 16,493  INTERESES POR COBRAR
+- 8,296  INTERESES POR COBRAR DEL MES
+  =====
+  8,197  INTERESES POR COBRAR ANTERIOR</literallayout>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Recuerde: <emphasis role="strong">INTERESES POR COBRAR  = INTERES POR COBRAR DEL MES + INTERES POR COBRAR DEL MES ANTERIOR</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Calcular la Deuda Anterior:</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>8,197 &#8658; 6%    X = (8,197 * 100) / 6  =  136,616.66  &#8658; X = 136,617 Deuda Anterior
+  X      100%</simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara>Calcular el valor del Mes:*</simpara>
+      
+
+<literallayout class="monospaced">207,407 +SALDO ACTUAL
+136,617 -DEUDA ANTERIOR
+======
+ 70,790 = VALOR DEL MES..</literallayout>
+
+
+      
+    </listitem>
+  
+</itemizedlist>
+
+<simpara>Recuerde: <emphasis role="strong">DEUDA ACTUAL = DEUDA ANTERIOR  + VALOR DEL MES</emphasis></simpara>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">Armar el nuevo estado de cuenta reflejando el abono.</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+<table frame="all"
+    rowsep="1" colsep="1">
+<title>ESTADO DE CUENTA</title>
+  
+  <tgroup cols="9">
+    
+    <colspec colname="col_1" colwidth="11*"/>
+    
+    <colspec colname="col_2" colwidth="11*"/>
+    
+    <colspec colname="col_3" colwidth="11*"/>
+    
+    <colspec colname="col_4" colwidth="11*"/>
+    
+    <colspec colname="col_5" colwidth="11*"/>
+    
+    <colspec colname="col_6" colwidth="11*"/>
+    
+    <colspec colname="col_7" colwidth="11*"/>
+    
+    <colspec colname="col_8" colwidth="11*"/>
+    
+    <colspec colname="col_9" colwidth="11*"/>
+    
+    
+    <thead>
+      
+      <row>
+        
+        <entry align="left" valign="top">MES</entry>
+        
+        <entry align="left" valign="top">DEUDA</entry>
+        
+        <entry align="left" valign="top">+ MORA</entry>
+        
+        <entry align="left" valign="top">+ VLR MES</entry>
+        
+        <entry align="left" valign="top">= VLR A PAGAR</entry>
+        
+        <entry align="left" valign="top">ESTADO</entry>
+        
+        <entry align="left" valign="top">F.OPO</entry>
+        
+        <entry align="left" valign="top">F.EXT</entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </thead>
+    
+    <tbody>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>FEB</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>0</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>FEB 27</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>4,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>100,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>204,000</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>MAR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>ABR</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>136,617</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>8,197</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>70,790</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>215,604</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>NO PAGO</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 15</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>ABR 29</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+      <row>
+        
+        <entry align="left" valign="top"><simpara>MAY</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>207,407</simpara></entry>
+        
+        <entry align="left" valign="top"><simpara>16,593</simpara></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+        <entry align="left" valign="top"></entry>
+        
+      </row>
+      
+    </tbody>
+    
+  </tgroup>
+</table>
+
+<itemizedlist>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO  ANTERIOR = 144,814  ANTES DE ABRIL 15</emphasis></simpara>
+      
+    </listitem>
+  
+    <listitem>
+      <simpara><emphasis role="strong">SALDO ACTUAL = 224,000 A PARTIR DE ABRIL 30</emphasis></simpara>
+      
+    </listitem>
+  
+</itemizedlist>
+
+</section>
+<section id="_los_descuentos_y_recargos">
+<title>LOS DESCUENTOS Y RECARGOS</title>
+
+</section>
+</section>
+</chapter>
+</book>
