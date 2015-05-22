@@ -1,0 +1,83 @@
+[[actualizar]]
+
+////
+a=&#225; e=&#233; i=&#237; o=&#243; u=&#250;
+
+A=&#193; E=&#201; I=&#205; O=&#211; U=&#218;
+
+n=&#241; N=&#209;
+////
+
+== ACTUALIZAR EL SIMA A LA VERSION ACTUAL
+
+=== OBJETIVO
+
+Documentar los pasos que se deben seguir para actualizar el SIMA a la versión actual.
+
+=== ALCANCE
+
+Estos pasos aplican para el sistema de Matriculas y Cartera.
+
+=== RESPONSABLES
+
+* Administrador del SIMA en el Colegio.
+
+=== ASPECTOS GENERALES
+
+* Este procedimiento es de estricto cumplimiento.
+
+* Para aplicar cualquier actualizaci&#243;n del SIMA, debe estar configurado, habilitado y en ejecuci&#243;n las copias de seguridad.
+
+* El sistema crea la carpeta C:\MISDOC en la unidad C donde graba los archivos que son impresos con la opción de archivo.
+
+* Para validar las actualizaciones se debe reconciliar cada mes para lo cual es importantes tener a la mano los extractos físicos o pdf del Banco.
+
+* La versión actual del sistema fortalece la conciliación, valida los pagos respecto al valor y la fecha para que sea concistente.
+
+=== PASOS EN SIMACART
+
+. Ingresar a cada año y actualizar todas las estructuras que solicita el sistema
+  y al aviso que se borro un archivo presionar cualquier tecla para crear dicho archivo.
+
+. Configurar el código del servicio facturado: [UTLIDADES][CONFIGURAR][CONFIRACION DEL SISTEMA]
+
+* CODIGO DEL SERVICIO FACTURADO = 02 PARA FACTURAR PENSION
+
+. Configurar el nombre del del servicio facturado: [UTLIDADES][CONFIGURAR][CONFIRACION DEL SISTEMA]
+
+* SERVICIO FACTURADO = PENSION
+
+. Actualizar las estrucutras de los archivos CLIENTES: [UTILIDADES][ACTUALIZAR][CLIENTES] Seleccionar todos los años.
+
+. Actualizar las estrucutras de los archivos PAGOS: [UTILIDADES][ACTUALIZAR][PAGOS] Seleccionar todos los años.
+
+. Actualizar las estrcuturas de todos los extractos de cada mes y año: [PAGOS][OPCION No.3] Seleccionar cada mes y actualizarlo.
+
+. Configurar los maestros habilitados: [UTLIDADES][CONFIGURAR][CONFIRACION DEL AÑO]
+
+MAESTROS HABILITADOS = JARPRIBTO según el caso.
+
+. Configurar los conceptos de las transacciones: [PAGOS][OPCION No.3][CONCEPTOS TRANSACIONES]
+
+
+.CONCEPTOS TRANSACCIONES
+[options="header"]
+|======================================================================
+|CODIGO  |DESCRIPCION           |REFERENCIA  | CONSIGNAR | CODIGO | A&#209;O|
+|   0    |OTROS                 |            |           |        |         |
+|   1    |RECIBOS MES ACTUAL    |            |           |   1    |  2015   |
+|   2    |RECIBOS OTROS MESES   |            |           |   2    |  2015   |
+|   3    |ABONOS                |            |           |   3    |  2015   |
+|   4    |MATRICULAS            |            |           |   4    |  2015   |
+|   .    |                      |            |           |        |         |
+|   .    |                      |            |           |        |         |
+|   .    |                      |            |           |        |         |
+|   40   |ABONOS 2000           |            |           |   3    |  2000   |
+|   .    |                      |            |           |        |         |
+|   250  |PENSIONES 2000        |            |           |   2    |  2000   |
+|============================================================================
+
+
+* SERVICIO FACTURADO = PENSION
+
+Los códigos de los conceptos por defecto 1,2,3,4 se debe asociar al año en curso.

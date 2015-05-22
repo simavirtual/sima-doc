@@ -20,6 +20,7 @@
 
   <target name="del" description="Initialize the build">
     <delete dir="sima\backups\target" failonerror="no"/>
+    <delete dir="sima\actualizar\target" failonerror="no"/>    
     <delete dir="sima\index\target" failonerror="no"/>
     <delete dir="simacart\contabilidad\admin\target" failonerror="no"/>
     <delete dir="simacart\manual-tesorero\target" failonerror="no"/>
